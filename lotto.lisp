@@ -1,4 +1,5 @@
 (defun lotto(col max) 
+	(setf *random-state* (make-random-state t))
 	(setf game (list))
 	
 	(loop for i from 1 to 100 while (< (list-length game) col) 
